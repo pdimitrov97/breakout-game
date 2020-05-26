@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html manifest="breakout-game.appcache" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" sizes="192x192" href="images/breakout_game_large.png" />
+    <link rel="apple-touch-icon" href="images/breakout_game_large.png" />
+    <link rel="shortcut icon" href="images/breakout_game_small.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <title>Breakout Game</title>
+</head>
+<body>
+    <div id="game_menu" class="game-menu">
+        <button id="play_pause" class="game-button">Start</button>
+        <p id="current_score" class="game-score">0 points</p>
+        <p id="highscore" class="game-score">Highscore: 0</p>
+        <button id="restart" class="game-button">Restart</button>
+    </div>
+    <div id="game_area" class="game-area">
+        <canvas id="game_board">You browser is too old!</canvas>
+    </div>
+    <div id="restart_confirm" class="confirm">
+        <div class="confirm-text-wrapper">
+            <p class="confirm-text">Do you want to restart the game?</p>
+        </div>
+        <div class="confirm-buttons-wrapper">
+            <button id="restart_yes" class="confirm-button left">Yes</button>
+            <button id="restart_no" class="confirm-button right">No</button>
+        </div>
+    </div>
+    <script src="scripts/BreakoutModel.js"></script>
+    <script src="scripts/BreakoutView.js"></script>
+    <script src="scripts/BreakoutController.js"></script>
+</body>
+</html>

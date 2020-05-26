@@ -1,0 +1,16 @@
+CACHE MANIFEST
+# 2019-03-03:v2
+
+# Explicitly cached 'master entries'.
+CACHE:
+breakout-game.html
+css/stylesheet.css
+scripts/BreakoutController.js
+scripts/BreakoutModel.js
+scripts/BreakoutView.js
+images/breakout_game_large.png
+images/breakout_game_small.png
+
+# Resources that require the user to be online.
+NETWORK:
+*
